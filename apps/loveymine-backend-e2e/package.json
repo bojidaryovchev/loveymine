@@ -1,0 +1,26 @@
+{
+  "name": "@loveymine/loveymine-backend-e2e",
+  "version": "0.0.1",
+  "private": true,
+  "nx": {
+    "implicitDependencies": [
+      "@loveymine/loveymine-backend"
+    ],
+    "targets": {
+      "e2e": {
+        "executor": "@nx/jest:jest",
+        "outputs": [
+          "{projectRoot}/test-output/jest/coverage"
+        ],
+        "options": {
+          "jestConfig": "apps/loveymine-backend-e2e/jest.config.cts",
+          "passWithNoTests": true
+        },
+        "dependsOn": [
+          "@loveymine/loveymine-backend:build",
+          "@loveymine/loveymine-backend:serve"
+        ]
+      }
+    }
+  }
+}

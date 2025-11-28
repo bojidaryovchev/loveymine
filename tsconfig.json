@@ -8,6 +8,12 @@
     },
     {
       "path": "./apps/loveymine-frontend"
+    },
+    {
+      "path": "./apps/loveymine-backend-e2e"
+    },
+    {
+      "path": "./apps/loveymine-backend"
     }
   ]
 }
